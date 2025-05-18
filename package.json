@@ -5,12 +5,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "postinstall": "npm run build"  // <-- ADD THIS LINE
+    "postinstall": "npm run build"  
   },
   "dependencies": {
-    // your dependencies...
   },
   "devDependencies": {
-    // your devDependencies...
   }
 }
