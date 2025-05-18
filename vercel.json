@@ -6,15 +6,14 @@
       "use": "@vercel/static-build",
       "config": {
         "distDir": "dist",
-        "cleanDistDir": true
+        "installCommand": "npm install --force"  // Force clean install
       }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/index.html",
-      "status": 200
+      "dest": "/index.html"
     }
   ]
 }
