@@ -5,17 +5,14 @@
       "src": "vite.config.js",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist"  // Vite's default output folder
+        "distDir": "dist"
       }
     }
   ],
   "routes": [
     {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/.*",
-      "dest": "/index.html"  // Required for SPA routing (e.g., React Router)
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
